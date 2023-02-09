@@ -17,5 +17,6 @@ import java.util.List;
 public class Order {
     @Id
     private String orderNumber;
+    private Integer price;
     private List<OrderLineItems> orderLineItemsList;
 }

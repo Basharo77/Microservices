@@ -15,5 +15,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Inventory {
     @Id
     private String skuCode;
+    private Integer price;
     private Integer quantity;
 }

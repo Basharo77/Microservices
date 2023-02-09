@@ -13,8 +13,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 public class OrderLineItems {
-    @Id
     private String skuCode;
-    private Integer price;
     private Integer quantity;
 }
