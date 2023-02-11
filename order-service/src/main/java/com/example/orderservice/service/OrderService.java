@@ -6,11 +6,14 @@ import com.example.orderservice.dto.OrderRequest;
 import com.example.orderservice.model.Order;
 import com.example.orderservice.model.OrderLineItems;
 import com.example.orderservice.repository.OrderRepository;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import java.io.Console;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
@@ -21,8 +24,7 @@ public class OrderService {
 
     private final OrderRepository orderRepository;
     private final WebClient.Builder webClientBuilder;
-
-    public String placeOrder(OrderRequest orderRequest) {
+    public String placeOrder(OrderRequest orderRequest){
         Order order = new Order();
         order.setOrderNumber(UUID.randomUUID().toString());
 
@@ -30,19 +32,22 @@ public class OrderService {
                 .stream()
                 .map((OrderLineItemsDto orderLineItemsDto) -> mapToDto(orderLineItemsDto))
                 .toList();
-
         order.setOrderLineItemsList(orderLineItems);
-
         List<String> skuCodes = order.getOrderLineItemsList().stream()
                 .map(OrderLineItems::getSkuCode)
                 .toList();
-
-        InventoryResponse[] inventoryResponsArray = webClientBuilder.build().get()
-                .uri("lb://inventory-service/api/inventory",
-                        uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
-                .retrieve()
-                .bodyToMono(InventoryResponse[].class)
-                .block();
+        InventoryResponse[] inventoryResponsArray;
+        try {
+            inventoryResponsArray = webClientBuilder.build().get()
+                    .uri("http://inventory-service/api/inventory",
+                            uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
+                    .retrieve()
+                    .bodyToMono(InventoryResponse[].class)
+                    .block();
+        }
+        catch (Exception e){
+            throw e;
+        }
         int tot = 0;
         boolean res = true;
         for (int i=0;i<order.getOrderLineItemsList().size();i++){
@@ -59,6 +64,7 @@ public class OrderService {
             order.setPrice(tot);
             orderRepository.save(order);
             return "Your order was placed successfully. The total price of your order is: "+ tot +"$";
+
         } else {
             return "Your order cannot be placed because not all items exist with the required quantity.";
             //throw new IllegalArgumentException("Product is not in stock, please try again later");
