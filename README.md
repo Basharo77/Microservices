@@ -20,6 +20,22 @@ Features:
 - Circuit Breaker between order service and inventory service.
 - Kafka Message Broker between order service and inventor service.
 
+Testing:
+- This is an example request written in Json to be sent to the order service and test the work:
+
+{
+    "orderLineItemsDtoList" : [
+        {
+            "skuCode" : "iphone",
+            "quantity" : 3   
+        },
+        {
+            "skuCode" : "nokia",
+            "quantity" : 3
+        }
+    ]
+}
+
 Note:
 
 I am a student who is learning the basics of microservices, thus this project is not completely mine. I worked with a course from youtube and edited some things for
