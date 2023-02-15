@@ -1,0 +1,181 @@
+00:29:52.602 INFO  Starting OrderServiceApplication using Java 17.0.5 on DESKTOP-31IED8V with PID 23516 (C:\Users\HP\Desktop\Shopping-App\order-service\target\classes started by HP in C:\Users\HP\Desktop\Shopping-App)
+00:29:52.613 INFO  No active profile set, falling back to 1 default profile: "default"
+00:29:55.506 INFO  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+00:29:55.872 INFO  Finished Spring Data repository scanning in 353 ms. Found 1 MongoDB repository interfaces.
+00:29:56.631 INFO  BeanFactory id=599d0ba4-a972-3cde-b048-b9626ff2077b
+00:29:58.221 INFO  Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:29:58.233 INFO  Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:29:58.250 INFO  Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:29:59.449 INFO  Tomcat initialized with port(s): 0 (http)
+00:29:59.472 INFO  Initializing ProtocolHandler ["http-nio-auto-1"]
+00:29:59.473 INFO  Starting service [Tomcat]
+00:29:59.474 INFO  Starting Servlet engine: [Apache Tomcat/9.0.71]
+00:30:00.186 INFO  Initializing Spring embedded WebApplicationContext
+00:30:00.187 INFO  Root WebApplicationContext: initialization completed in 7454 ms
+00:30:04.865 INFO  note: noprealloc may hurt performance in many applications
+00:30:05.000 INFO  2023-02-16T00:30:04.999+0300 I CONTROL  [initandlisten] MongoDB starting : pid=24040 port=62030 dbpath=C:\Users\HP\AppData\Local\Temp\embedmongo-db-207daeae-8746-4666-8c17-1f4a1be38df9 64-bit host=DESKTOP-31IED8V
+00:30:05.000 INFO  2023-02-16T00:30:05.000+0300 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+00:30:05.001 INFO  2023-02-16T00:30:05.000+0300 I CONTROL  [initandlisten] db version v3.5.5
+00:30:05.001 INFO  2023-02-16T00:30:05.000+0300 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+00:30:05.001 INFO  2023-02-16T00:30:05.000+0300 I CONTROL  [initandlisten] allocator: tcmalloc
+00:30:05.001 INFO  2023-02-16T00:30:05.000+0300 I CONTROL  [initandlisten] modules: none
+00:30:05.002 INFO  2023-02-16T00:30:05.000+0300 I CONTROL  [initandlisten] build environment:
+00:30:05.002 INFO  2023-02-16T00:30:05.000+0300 I CONTROL  [initandlisten]     distarch: x86_64
+00:30:05.002 INFO  2023-02-16T00:30:05.000+0300 I CONTROL  [initandlisten]     target_arch: x86_64
+00:30:05.003 INFO  2023-02-16T00:30:05.000+0300 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 62030 }, security: { authorization: "disabled" }, storage: { dbPath: "C:\Users\HP\AppData\Local\Temp\embedmongo-db-207daeae-8746-4666-8c17-1f4a1be38df9", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+00:30:05.003 INFO  2023-02-16T00:30:05.003+0300 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3542M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+00:30:05.103 INFO  2023-02-16T00:30:05.103+0300 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+00:30:05.103 INFO  2023-02-16T00:30:05.103+0300 I CONTROL  [initandlisten] 
+00:30:05.104 INFO  2023-02-16T00:30:05.103+0300 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+00:30:05.104 INFO  2023-02-16T00:30:05.103+0300 I CONTROL  [initandlisten] **       Not recommended for production.
+00:30:05.105 INFO  2023-02-16T00:30:05.103+0300 I CONTROL  [initandlisten] 
+00:30:05.712 INFO  2023-02-16T00:30:05.712+0300 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/HP/AppData/Local/Temp/embedmongo-db-207daeae-8746-4666-8c17-1f4a1be38df9/diagnostic.data'
+00:30:05.752 INFO  2023-02-16T00:30:05.753+0300 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+00:30:05.753 INFO  2023-02-16T00:30:05.753+0300 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+00:30:05.756 INFO  2023-02-16T00:30:05.756+0300 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+00:30:05.761 INFO  2023-02-16T00:30:05.761+0300 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+00:30:05.764 INFO  2023-02-16T00:30:05.764+0300 I NETWORK  [thread1] waiting for connections on port 62030
+00:30:05.765 INFO  start MongodConfig{version=Version{3.5.5}, timeout=de.flapdoodle.embed.mongo.config.Timeout@347b370c, net=de.flapdoodle.embed.mongo.config.Net@26aee0a6, cmdOptions=MongoCmdOptions{syncDelay=0, useDefaultSyncDelay=false, isVerbose=false, useNoPrealloc=true, useSmallFiles=true, useNoJournal=true, enableTextSearch=false, auth=false, master=false}, password=, userName=, replication=de.flapdoodle.embed.mongo.config.Storage@20184ade, isConfigServer=false, isShardServer=false, processListener=de.flapdoodle.embed.mongo.config.processlistener.NoopProcessListener@35fb3209, params={}, args={}, pidFile=mongod.pid, supportConfig=de.flapdoodle.embed.mongo.config.SupportConfig@5855b0ed}
+00:30:06.293 INFO  2023-02-16T00:30:06.294+0300 I NETWORK  [thread1] connection accepted from 127.0.0.1:62031 #1 (1 connection now open)
+00:30:06.294 INFO  2023-02-16T00:30:06.295+0300 I NETWORK  [thread1] connection accepted from 127.0.0.1:62032 #2 (2 connections now open)
+00:30:06.310 INFO  2023-02-16T00:30:06.310+0300 I NETWORK  [conn1] received client metadata from 127.0.0.1:62031 conn1: { driver: { name: "mongo-java-driver|sync|spring-boot", version: "4.6.1" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/17.0.5+9-LTS-191" }
+00:30:06.311 INFO  2023-02-16T00:30:06.312+0300 I NETWORK  [conn2] received client metadata from 127.0.0.1:62032 conn2: { driver: { name: "mongo-java-driver|sync|spring-boot", version: "4.6.1" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/17.0.5+9-LTS-191" }
+00:30:06.321 INFO  MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.5+9-LTS-191"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@47fca3cc], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@55746340]}, clusterSettings={hosts=[localhost:62030], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@6a0c7af6], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+00:30:06.343 INFO  Opened connection [connectionId{localValue:2, serverValue:1}] to localhost:62030
+00:30:06.343 INFO  Monitor thread successfully connected to server with description ServerDescription{address=localhost:62030, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=46589400}
+00:30:06.344 INFO  Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:62030
+00:30:06.563 WARN  Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+00:30:06.937 WARN  Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+00:30:12.093 INFO  Cannot determine local hostname
+00:30:14.614 INFO  Cannot determine local hostname
+00:30:18.457 INFO  Cannot determine local hostname
+00:30:18.503 INFO  Eureka HTTP Client uses RestTemplate.
+00:30:18.945 WARN  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+00:30:18.976 INFO  Exposing 1 endpoint(s) beneath base path '/actuator'
+00:30:19.085 INFO  Starting ProtocolHandler ["http-nio-auto-1"]
+00:30:19.136 INFO  Tomcat started on port(s): 62035 (http) with context path ''
+00:30:19.137 INFO  Updating port to 62035
+00:30:19.146 INFO  Setting initial instance status as: STARTING
+00:30:19.385 INFO  Initializing Eureka in region us-east-1
+00:30:19.395 INFO  Resolving eureka endpoints via configuration
+00:30:19.457 INFO  Disable delta property : false
+00:30:19.457 INFO  Single vip registry refresh property : null
+00:30:19.457 INFO  Force full registry fetch : false
+00:30:19.457 INFO  Application is null : false
+00:30:19.457 INFO  Registered Applications size is zero : true
+00:30:19.458 INFO  Application version is -1: true
+00:30:19.458 INFO  Getting all instance registry info from the eureka server
+00:30:20.362 INFO  The response status is 200
+00:30:20.368 INFO  Starting heartbeat executor: renew interval is: 30
+00:30:20.374 INFO  InstanceInfoReplicator onDemand update allowed rate per min is 4
+00:30:20.393 INFO  Discovery Client initialized at timestamp 1676496620392 with initial instances count: 3
+00:30:20.412 INFO  Registering application ORDER-SERVICE with eureka with status UP
+00:30:20.414 INFO  Saw local status change event StatusChangeEvent [timestamp=1676496620414, current=UP, previous=STARTING]
+00:30:20.418 INFO  DiscoveryClient_ORDER-SERVICE/localhost:order-service:0: registering service...
+00:30:20.519 INFO  DiscoveryClient_ORDER-SERVICE/localhost:order-service:0 - registration status: 204
+00:30:22.667 INFO  Cannot determine local hostname
+00:30:24.880 INFO  Cannot determine local hostname
+00:30:25.045 INFO  Started OrderServiceApplication in 37.179 seconds (JVM running for 38.984)
+00:31:34.440 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:31:34.441 INFO  Initializing Servlet 'dispatcherServlet'
+00:31:34.451 INFO  Completed initialization in 9 ms
+00:31:47.238 INFO  2023-02-16T00:31:47.238+0300 I NETWORK  [thread1] connection accepted from 127.0.0.1:62182 #3 (3 connections now open)
+00:31:47.240 INFO  2023-02-16T00:31:47.239+0300 I NETWORK  [conn3] received client metadata from 127.0.0.1:62182 conn3: { driver: { name: "mongo-java-driver|sync|spring-boot", version: "4.6.1" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/17.0.5+9-LTS-191" }
+00:31:47.242 INFO  Opened connection [connectionId{localValue:3, serverValue:3}] to localhost:62030
+00:31:47.403 INFO  2023-02-16T00:31:47.403+0300 I COMMAND  [conn3] command test.$cmd command: update { update: "order", ordered: true, updates: [ { q: { _id: "331c1def-49c3-408f-a9e9-48d49c891319" }, u: { _id: "331c1def-49c3-408f-a9e9-48d49c891319", price: 39, orderLineItemsList: [ { skuCode: "iphone", quantity: 3 }, { skuCode: "nokia", quantity: 3 } ], _class: "com.example.orderservice.model.Order" }, upsert: true } ] } numYields:0 reslen:139 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 101ms
+00:31:47.511 INFO  ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+00:31:47.650 INFO  [Producer clientId=producer-1] Instantiated an idempotent producer.
+00:31:47.901 INFO  Kafka version: 3.1.2
+00:31:48.269 INFO  Kafka commitId: f8c67dc3ae0a3265
+00:31:48.270 INFO  Kafka startTimeMs: 1676496707886
+00:31:49.555 INFO  [Producer clientId=producer-1] Resetting the last seen epoch of partition notificationTopic-0 to 0 since the associated topicId changed from null to PyHF54UoScWqLbb_aQ3fQQ
+00:31:49.560 INFO  [Producer clientId=producer-1] Cluster ID: mtxeTUjvRim2VPgc15gPJw
+00:31:50.383 INFO  [Producer clientId=producer-1] ProducerId set to 1000 with epoch 0
+00:35:19.465 INFO  Resolving eureka endpoints via configuration
+00:40:19.479 INFO  Resolving eureka endpoints via configuration
+00:41:20.390 INFO  [Producer clientId=producer-1] Node -1 disconnected.
