@@ -19,6 +19,8 @@ Features:
 - Eureka Clinet and Server for service discoery
 - Circuit Breaker between order service and inventory service.
 - Kafka Message Broker between order service and inventor service.
+- Distributed Tracing using Zipkin.
+- Centralized logging using Logstash, Elasticsearch, and Kibana.
 
 Testing:
 - This is an example request written in Json to be sent to the order service and test the work:
